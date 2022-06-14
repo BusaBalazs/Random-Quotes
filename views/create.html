@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200&family=Libre+Baskerville:ital@0;1&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/public/create.css" />
+    <title>Random Quotes Generator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-items">
+          <li class="logo">
+            <h1 class="logo-text">quotes</h1>
+          </li>
+          <li class="nav-link btn">
+            <a href="/">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="quote-container">
+        <form action="/create" method="POST">
+          <div class="input-container">
+            <label for="quote">Your qoute:</label>
+            <textarea name="quote" id="quote-input" cols="25" rows="10"></textarea>
+          </div>
+          <div class="input-container">
+            <label for="source">Author:</label>
+            <input type="text" name="source" id="source-input" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

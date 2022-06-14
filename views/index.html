@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200&family=Libre+Baskerville:ital@0;1&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>Random Quotes Generator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-items">
+          <li class="logo">
+            <h1 class="logo-text">quotes</h1>
+          </li>
+          <li class="nav-link btn">
+            <a href="create.html">Write qoutes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="quote-container">
+        <p class="quote-text">
+"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum adipisci magni quis, id amet ab non minima illo perferendis.
+Reprehenderit corporis earum, omnis blanditiis quaerat commodi nobis
+ipsa cupiditate ab."
+        </p>
+        <p class="source">Lorem Ipsum</p>
+      </section>
+      <form action="/get" method="POST">
+        <button class="new-qoute btn">New Qoute</button>
+      </form>
+    </main>
+    <footer>
+      <p>2022 Busa</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+/*------------------------------------------------------------------
+************ VARIABELS
+-------------------------------------------------------------------*/
+:root {
+  --mainBg: linear-gradient(180deg, #e8e8e8, #b7bdc2);
+  --blue-300: #51a5e1;
+  --gray-800: #2f4550;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+************ CSS RESET / BASIC STYLE 
+-------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: var(--mainBg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  font-family: "Libre Baskerville", sans-serif;
+  color: var(--blue-300);
+}
+
+main {
+  min-height: calc(100vh - 50px);
+}
+
+
+
+
+/*------------------------------------------------------------------
+************ HEADER 
+-------------------------------------------------------------------*/
+header,
+footer {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
+}
+
+nav {
+  max-width: 95%;
+  margin: auto;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  padding: 1.8em 1em;
+}
+
+.logo-text {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.41);
+}
+
+.logo-text::before,
+.logo-text::after {
+  content: '"';
+  display: block;
+  position: absolute;
+  font-family: "Catamaran", sans-serif;;
+  font-size: 8rem;
+  color: var(--gray-800);
+  opacity: 30%;
+  z-index: -1;
+}
+
+.logo-text::before {
+  transform: rotate(180deg);
+  left: 0px;
+  bottom: -30px;
+}
+
+.logo-text::after {
+  right: 0px;
+  top: -30px;
+}
+
+.nav-link a {
+  font-size: 1.2rem;
+  color: var(--blue-300);
+}
+
+.btn {
+  padding: .3em 1em;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: var(--blue-300);
+  border: 1px solid var(--blue-300);
+  box-shadow: 1px 3px 5px rgba(0, 57, 162, 0.241);
+  transition: transform .15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.quote-container {
+  margin: 3em 0;
+  padding: 1em;
+  line-height: 1.7em;
+  color: var(--gray-800);
+}
+
+.quote-text {
+  margin-bottom: 1.2em;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.quote-text::first-letter {
+  font-size: 2rem;
+}
+
+.source {
+  position: relative;
+  font-style: italic;
+  left: 35px;
+}
+
+.source::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 1px;
+  left: -35px;
+  top: 50%;
+  background-color: var(--gray-800);
+}
+
+.new-qoute {
+  display: block;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+footer {
+  height: 50px;
+  text-align: center;
+  padding: 1em;
+  font-family: Roboto, sans-serif;
+  /* set box shadow with header*/
+}
+
+@media (max-width: 330px) {
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .nav-link a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 970px) {
+
+  .nav-items {
+    justify-content: space-around;
+  }
+
+  .quote-container {
+    max-width: 1100px;
+    font-size: 2rem;
+    margin: 3em auto;
+  }
+
+  .quote-text::first-letter {
+    font-size: 2.6rem;
+  }
+}

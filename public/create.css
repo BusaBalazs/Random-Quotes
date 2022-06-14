@@ -1,0 +1,30 @@
+label {
+  display: block;
+}
+
+#quote-input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1em;
+  margin-bottom: 2em;
+  box-shadow: 1px 1px 15px rgba(0, 38, 78, 0.218) inset;
+}
+
+#source-input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1em;
+  text-transform: capitalize;
+  box-shadow: 1px 1px 5px rgba(0, 38, 78, 0.218) inset;
+}
+
+@media (min-width: 970px) {
+
+  #quote-input {
+    font-size: 1.8rem;
+  }
+
+  #source-input {
+    font-size: 1.5rem;
+  }
+}
